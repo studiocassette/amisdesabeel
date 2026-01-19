@@ -57,11 +57,39 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Catégories spécifiques
+        sabeel: {
+          DEFAULT: "hsl(var(--sabeel))",
+          foreground: "hsl(var(--sabeel-foreground))",
+        },
+        kairos: {
+          DEFAULT: "hsl(var(--kairos))",
+          foreground: "hsl(var(--kairos-foreground))",
+        },
+        publications: {
+          DEFAULT: "hsl(var(--publications))",
+          foreground: "hsl(var(--publications-foreground))",
+        },
+        prieres: {
+          DEFAULT: "hsl(var(--prieres))",
+          foreground: "hsl(var(--prieres-foreground))",
+        },
+        videos: {
+          DEFAULT: "hsl(var(--videos))",
+          foreground: "hsl(var(--videos-foreground))",
+        },
+        cornerstone: {
+          DEFAULT: "hsl(var(--cornerstone))",
+          foreground: "hsl(var(--cornerstone-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
       keyframes: {
         "accordion-down": {
@@ -80,10 +108,21 @@ export default {
             height: "0",
           },
         },
+        "fade-in": {
+          from: {
+            opacity: "0",
+            transform: "translateY(10px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.5s ease-out",
       },
     },
   },
