@@ -4,8 +4,9 @@ import { ArticleCard } from "@/components/ArticleCard";
 import { CategoryBadge } from "@/components/CategoryBadge";
 import { NewsletterForm } from "@/components/NewsletterForm";
 import { Button } from "@/components/ui/button";
+import logoSabeel from "@/assets/logo-sabeel.jpeg";
 import { 
-  getRecentArticles, 
+  getRecentArticles,
   getCurrentPrayer, 
   Category 
 } from "@/data/mockData";
@@ -77,11 +78,20 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/5 via-background to-accent/10 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM0NDgwNDQiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
+      <section className="relative bg-gradient-to-br from-primary/10 via-background to-accent/20 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDg4Y2MiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
         
         <div className="container mx-auto px-4 py-16 lg:py-24 relative">
           <div className="max-w-3xl mx-auto text-center">
+            {/* Logo centré */}
+            <div className="flex justify-center mb-6">
+              <img 
+                src={logoSabeel} 
+                alt="Logo Sabeel - Source d'eau vive" 
+                className="h-24 md:h-32 w-auto object-contain"
+              />
+            </div>
+            
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in">
               Amis de Sabeel France
             </h1>
