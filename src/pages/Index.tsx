@@ -96,9 +96,10 @@ const Index = () => {
               Amis de Sabeel France
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Solidarité avec le peuple palestinien
+              Réseau de soutien au Centre œcuménique Sabeel, 
+              présent à Jérusalem et Nazareth.
               <br className="hidden sm:block" />
-              <span className="text-primary font-medium">Traduction et diffusion des documents de Sabeel Jérusalem</span>
+              <span className="text-primary font-medium">Développer des liens de solidarité avec les Églises de Palestine–Israël</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
