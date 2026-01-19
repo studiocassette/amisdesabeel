@@ -38,11 +38,11 @@ export const Footer = () => {
           <div className="lg:col-span-1">
             <Logo size="md" className="mb-4" />
             <p className="text-sm text-muted-foreground mb-4">
-              Les Amis de Sabeel France traduisent et diffusent les documents de Sabeel Jérusalem, 
-              centre œcuménique de théologie de la libération en Palestine.
+              Amis de Sabeel – France (ADSF) est un réseau de soutien au Centre œcuménique Sabeel, 
+              présent à Jérusalem et Nazareth.
             </p>
             <p className="text-sm text-muted-foreground">
-              Solidarité avec le peuple palestinien à travers une perspective spirituelle et théologique.
+              Développer des liens de solidarité avec les Églises de Palestine–Israël et relayer leur témoignage.
             </p>
           </div>
 
