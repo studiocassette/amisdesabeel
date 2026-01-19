@@ -99,21 +99,6 @@ export const Footer = () => {
               <p className="mt-1">France</p>
             </address>
             
-            <h3 className="font-semibold mb-3">Suivez-nous</h3>
-            <div className="flex gap-3">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.name}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-lg bg-background hover:bg-primary hover:text-primary-foreground transition-colors"
-                  aria-label={social.name}
-                >
-                  <social.icon className="h-5 w-5" />
-                </a>
-              ))}
-            </div>
           </div>
         </div>
 
