@@ -226,7 +226,6 @@ img {
 .main-navigation {
   display: none;
   align-items: center;
-  gap: 0.25rem;
 }
 
 @media (min-width: 1024px) {
@@ -235,16 +234,36 @@ img {
   }
 }
 
+.main-navigation ul,
+.main-navigation .menu {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation li,
+.main-navigation .menu-item {
+  margin: 0;
+  padding: 0;
+}
+
 .main-navigation a {
+  display: block;
   padding: 0.5rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 500;
   border-radius: var(--radius);
   color: var(--color-muted-foreground);
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
-.main-navigation a:hover {
+.main-navigation a:hover,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_item > a {
   color: var(--color-foreground);
   background-color: var(--color-secondary);
 }
@@ -291,6 +310,19 @@ img {
   }
 }
 
+.mobile-navigation ul,
+.mobile-navigation .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-navigation li,
+.mobile-navigation .menu-item {
+  margin: 0;
+  padding: 0;
+}
+
 .mobile-navigation a {
   display: block;
   padding: 0.75rem 1rem;
@@ -301,14 +333,11 @@ img {
   transition: all 0.2s ease;
 }
 
-.mobile-navigation a:hover {
+.mobile-navigation a:hover,
+.mobile-navigation .current-menu-item > a,
+.mobile-navigation .current_page_item > a {
   color: var(--color-foreground);
   background-color: var(--color-secondary);
-}
-
-.mobile-navigation a.active {
-  color: var(--color-primary);
-  background-color: rgba(14, 141, 191, 0.1);
 }
 
 .hero-section {
@@ -909,21 +938,28 @@ img {
   margin-bottom: 1rem;
 }
 
-.footer-links {
+.footer-links,
+.footer-column .menu {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.footer-links li {
-  margin-bottom: 0.5rem;
+.footer-links li,
+.footer-column .menu-item {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
 }
 
-.footer-links a {
+.footer-links a,
+.footer-column .menu a {
   font-size: 0.875rem;
   color: var(--color-muted-foreground);
   transition: color 0.2s ease;
 }
 
-.footer-links a:hover {
+.footer-links a:hover,
+.footer-column .menu a:hover {
   color: var(--color-primary);
 }
 
@@ -961,6 +997,19 @@ img {
 .footer-legal {
   display: flex;
   gap: 1rem;
+}
+
+.footer-legal .menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-legal .menu-item {
+  margin: 0;
+  padding: 0;
 }
 
 .footer-legal a {
